@@ -29,7 +29,7 @@ const AppContent = ({params }) => {
   setRoutes([...routesEl])
   },[params['*']])
 
-  return (validateLayout&&
+  return (
     <CContainer lg>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes  >

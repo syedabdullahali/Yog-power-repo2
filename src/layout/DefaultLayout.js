@@ -9,7 +9,6 @@ import {
 import {useParams } from 'react-router-dom'
 
 
-const params = useParams()
 
 
 
@@ -24,6 +23,8 @@ const DefaultLayout = () => {
   let num =0
   const disPatch = useDispatch()
   const navigate = useNavigate()
+  const params = useParams()
+
   const getUserRight = useSelector((el)=>el.getUserRight)    
   const isEmployee = useSelector((el)=>el.isEmployee)    
   const activeToCall = useSelector((el)=>el.activeToCall)    
