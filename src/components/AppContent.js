@@ -29,6 +29,7 @@ const AppContent = ({validateLayout}) => {
   useEffect(()=>{
   setRoutes([...routesEl])
   },[params['*']])
+  console.log(routesEl)
 
   return (validateLayout&&
     <CContainer lg>
