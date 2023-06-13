@@ -177,7 +177,7 @@ function changeState (state = initialState, { type, ...rest }){
     state.isAdmin = true
     return  { ...state, ...rest }
     case 'showHomePage':
-    return state.showHomePage = rest.payload 
+    state.showHomePage = rest.payload 
     return  { ...state, ...rest }
     case 'clearentireStore':
     return {...initialState}
