@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect,useState } from 'react'
-import { Navigate, Route, Routes,useParams } from 'react-router-dom'
+import { Navigate, Route, Routes,useParams,Outlet } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
 // routes config
 import routes from '../routes'
@@ -7,6 +7,7 @@ import routes from '../routes'
 
 const AppContent = ({params }) => {
 
+  console.log(params)
 
   const routesEl = routes.map((route, idx) => {
     return (
@@ -16,7 +17,7 @@ const AppContent = ({params }) => {
           path={route.path}
           exact={route.exact}
           name={route.name}
-          element={<route.element />}
+          element={<route.element/>}
         />
       )
     )
@@ -38,6 +39,8 @@ const AppContent = ({params }) => {
           <Route path="/dashboard" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </Suspense>
+      {<Outlet/>}
+
     </CContainer>
   )
 }

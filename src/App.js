@@ -1,5 +1,6 @@
 import React, { Component, Suspense } from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes} from 'react-router-dom'
+
 import './scss/style.scss'
 import Forgot from './views/pages/forgot/Forgot'
 
@@ -19,7 +20,11 @@ const Register = React.lazy(() => import('./views/pages/register/Register'))
 const Page500 = React.lazy(() => import('./views/pages/page500/Page500'))
 
 class App extends Component {
+  
   render() {
+
+    console.log('hello')
+
     return (
       <HashRouter>
         <Suspense fallback={loading}>

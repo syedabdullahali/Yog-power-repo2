@@ -6,14 +6,13 @@ import {
   AppHeader,
 } from '../components/index'
 
-import {useParams } from 'react-router-dom'
+import {useParams,redirect,useNavigate  } from 'react-router-dom'
 
 
 
 
 
 import { useDispatch,useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 
 let user = JSON.parse(localStorage.getItem('user-info'))
 const token = user?.token;
@@ -40,7 +39,7 @@ const DefaultLayout = () => {
 
   useEffect(()=>{   
   if(!token){
-    navigate('/login')
+    redirect('/login')
     return 
   }
   },[token])
