@@ -45,7 +45,7 @@ const AppContent = ({params }) => {
   )
 }
 
-export default React.memo(AppContent)
+export default AppContent
 
 
 
