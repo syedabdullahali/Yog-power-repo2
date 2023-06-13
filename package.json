@@ -1,0 +1,78 @@
+{
+  "proxy": "http://13.235.115.57:3000",
+  "name": "@coreui/coreui-free-react-admin-template",
+  "version": "4.4.0",
+  "description": "CoreUI Free React Admin Template",
+  "homepage": ".",
+  "bugs": {
+    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+  },
+  "license": "MIT",
+  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+  "scripts": {
+    "build": "react-scripts build",
+    "changelog": "auto-changelog --starting-version 4.4.0 --commit-limit false --hide-credit",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.js\"",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand"
+  },
+  "dependencies": {
+    "@coreui/chartjs": "^3.0.0",
+    "@coreui/coreui": "^4.2.1",
+    "@coreui/icons": "^2.1.0",
+    "@coreui/icons-react": "^2.1.0",
+    "@coreui/react": "^4.3.1",
+    "@coreui/react-chartjs": "^2.1.0",
+    "@coreui/utils": "^1.3.1",
+    "@emailjs/browser": "^3.7.0",
+    "@react-icons/all-files": "^4.1.0",
+    "autoprefixer": "^10.4.13",
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
+    "classnames": "^2.3.1",
+    "core-js": "^3.24.1",
+    "css-blank-pseudo": "^4.1.1",
+    "cssesc": "^3.0.0",
+    "detect-port-alt": "^1.1.6",
+    "ejs": "^3.1.8",
+    "emailjs-com": "^3.2.0",
+    "file-saver": "^2.0.5",
+    "firebase": "^9.14.0",
+    "moment": "^2.29.4",
+    "nanoid": "^4.0.0",
+    "nodemailer": "^6.8.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.4.2",
+    "react-to-print": "^2.14.7",
+    "redux": "4.2.0",
+    "redux-thunk": "^2.4.2",
+    "simplebar-react": "^2.4.1",
+    "uuid": "^9.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.3",
+    "auto-changelog": "~2.4.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.54.4",
+    "web-vitals": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}
