@@ -39,7 +39,7 @@ const DefaultLayout = () => {
 
   useEffect(()=>{   
   if(!token){
-    redirect('/login')
+    navigate('/login')
     return 
   }
   },[token])
