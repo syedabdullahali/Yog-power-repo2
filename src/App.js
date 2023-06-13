@@ -21,9 +21,6 @@ const Page500 = React.lazy(() => import('./views/pages/page500/Page500'))
 
 function App() {
   
-
-    console.log('hello')
-
     return (
       <HashRouter>
         <Suspense fallback={loading}>

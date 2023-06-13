@@ -43,9 +43,9 @@ const AppHeaderDropdown = () => {
   const disPatch = useDispatch()
   const navigate = useNavigate()
   const Logout = () => {
-    disPatch({type:'clearentireStore'})
     localStorage.clear()
     navigate('/login')
+    disPatch({type:'clearentireStore'})
   }
 
   return (
@@ -139,7 +139,6 @@ const AppHeaderDropdownForm = () => {
 
         <CDropdownItem >
 
-          {console.log(window.location.pathname)}
 
        <Link style={{ textDecoration: 'none' }} to="/message/reminder" >
 
