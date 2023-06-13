@@ -5,9 +5,8 @@ import { CContainer, CSpinner } from '@coreui/react'
 import routes from '../routes'
 
 
-const AppContent = ({validateLayout}) => {
+const AppContent = ({params }) => {
 
-  const params = useParams()
 
   const routesEl = routes.map((route, idx) => {
     return (
@@ -29,7 +28,6 @@ const AppContent = ({validateLayout}) => {
   useEffect(()=>{
   setRoutes([...routesEl])
   },[params['*']])
-  console.log(routesEl)
 
   return (validateLayout&&
     <CContainer lg>

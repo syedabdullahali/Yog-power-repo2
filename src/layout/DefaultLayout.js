@@ -6,6 +6,12 @@ import {
   AppHeader,
 } from '../components/index'
 
+import {useParams } from 'react-router-dom'
+
+
+const params = useParams()
+
+
 
 import { useDispatch,useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -69,7 +75,7 @@ useEffect(()=>{
         <AppHeader />
         <div className="body flex-grow-1 px-3 mb-3">
           
-          <AppContent validateLayout={validateLayout} />
+          <AppContent params={params} />
         </div>
       </div>
     </div>
