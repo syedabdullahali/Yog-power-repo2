@@ -1,9 +1,11 @@
+
+// import App from './App'
+
 import 'react-app-polyfill/stable'
 import 'core-js'
-import React,{useEffect} from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-// import App from './App'
-const App = React.lazy(()=>import('./App'))
+import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { Provider } from 'react-redux'
 import store from './store'
