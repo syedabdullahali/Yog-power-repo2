@@ -22,7 +22,6 @@ const Page500 = React.lazy(() => import('./views/pages/page500/Page500'))
 function App() {
   
     return (
-      <HashRouter>
         <Suspense fallback={loading}>
           <Routes>
             <Route exact path="/login" name="Login Page" element={<Login />} />
@@ -38,7 +37,6 @@ function App() {
             <Route  exact path="*" name="Home" element={<DefaultLayout />} />
           </Routes>
         </Suspense>
-      </HashRouter>
     )
   }
 

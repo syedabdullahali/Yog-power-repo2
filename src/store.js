@@ -59,7 +59,6 @@ const store = createStore(changeState,applyMiddleware(thunkMiddleware))
 
 
 function functionUser(token,emailUniqId){
-  console.log(emailUniqId)
   return function(dispatch){
     axios.get(`${'https://yog-power-api.vercel.app'}/allRight/rights/${emailUniqId}`, {
       headers: {
@@ -182,9 +181,6 @@ function changeState (state = initialState, { type, ...rest }){
     case 'clearentireStore':
     return {...initialState}
     default:
-
-
-
 
      return state
   } 
